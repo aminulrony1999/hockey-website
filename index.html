@@ -22,12 +22,17 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "primary-color": "#FF4240",
             },
           },
         },
       };
     </script>
+    <!-- fontawesome added -->
+    <script
+      src="https://kit.fontawesome.com/5ca21d0e02.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- adding google font -->
     <style>
       .font-manrope {
@@ -35,5 +40,61 @@
       }
     </style>
   </head>
-  <body class="font-manrope"></body>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100 justify-between">
+          <div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn btn-ghost normal-case text-xl lg:text-4xl text-[#131318] font-extrabold"
+              >Hockey<span class="text-primary-color">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu text-base menu-horizontal px-1 gap-11">
+              <li><a class="hover:text-primary-color">Home</a></li>
+              <li><a class="hover:text-primary-color">About</a></li>
+              <li><a class="hover:text-primary-color">Pages</a></li>
+              <li><a class="hover:text-primary-color">Blog</a></li>
+              <li><a class="hover:text-primary-color">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-[#89898B]  mr-6 hidden lg:flex"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <a class="btn btn-primary text-white bg-primary-color border-none hover:bg-primary-color px-6 py-4"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
